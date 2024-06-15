@@ -1,0 +1,69 @@
+/* src/components/CurrentWeather.css */
+
+.current-weather {
+  text-align: center;
+  padding: 20px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ff9800, #ff5722);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.weather-main {
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  font-size: 60px;
+}
+
+.temperature {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.condition {
+  font-size: 24px;
+}
+
+.date {
+  font-size: 18px;
+  color: #ffeb3b;
+}
+
+  
+/* Example CSS for dynamic backgrounds */
+.icon{
+  font-size: 35px;
+}
+
+.icon.sunny::before {
+  content: '☀️'; /* Unicode character for sun */
+  font-size: 40px;
+}
+
+.icon.rain::before{
+  content: '🌧️'; /* Unicode character for rain */
+  font-size: 40px;
+}
+
+.icon.clouds::before {
+  content: '☁️'; /* Unicode character for clouds */
+  font-size: 40px;
+}
+
+.icon.snow::before {
+  content: '❄️'; /* Unicode character for snow */
+  font-size: 40px;
+}
+
+
+.current-weather.storm {
+  content: '🌩️'; /* Unicode character for storm */
+}
+
+
+.weather-icon.clear {
+  content: '🌕'; /* Unicode character for full moon (clear night) */
+}
+/* Apply similar styles for other conditions */

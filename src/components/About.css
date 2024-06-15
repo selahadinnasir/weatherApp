@@ -1,0 +1,37 @@
+/* Outer wrapper for the full-width background */
+ body {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 20px; /* Base font size for readability */
+  font-weight: 200;
+ }
+ .about-section {
+    width: 100%; /* Ensure the section covers the full width */
+    background-color: black; /* Full-width background */
+    padding: 20px 0; /* Padding on top and bottom */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Inner container for centering the content */
+  .about-section .content-wrapper {
+    max-width: 700px; /* Limit the width of the text content */
+    margin: 0 auto; /* Center the content within the full-width section */
+    padding: 20px; /* Internal padding for the content area */
+    background-color: black; /* Ensure the same background color */
+    border-radius: 10px; /* Rounded corners */
+    color: rgb(236, 228, 228); /* Text color to contrast against the black background */
+    text-align: center; /* Center align the text */
+    line-height: 2; /* Line height for readability */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px; /* Base font size for readability */
+    font-weight: 200;
+  }
+  
+  .about-section a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-section a:hover {
+    text-decoration: underline;
+  }
+  

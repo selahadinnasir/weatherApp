@@ -1,0 +1,92 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(114, 114, 223);
+    color: white;
+    height:65px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .search-button {
+    /* Basic Button Styling */
+    background-color: rgb(43, 40, 40); /* Primary blue color */
+    color: #ffffff; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for size */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Slightly bold text */
+    text-transform: uppercase; /* Uppercase text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    
+    /* Shadow for a raised button effect */
+    box-shadow: 0 4px 6px rgba(185, 190, 196, 0.4);
+  }
+  
+  .search-button:hover {
+    /* Hover Effects */
+    background-color: black; /* Darker blue on hover */
+    box-shadow: 0 6px 8px black /* Stronger shadow on hover */
+  }
+  
+
+  
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    color:rgb(230, 175, 73);
+  }
+  
+/* Existing styles above this line */
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .header {
+      align-items: flex-start;
+    }
+  
+    .logo {
+      font-size: 20px;
+    }
+  
+    .search-bar input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .nav-links {
+      flex-direction: row;
+      gap: 10px;
+      
+    }
+  
+    .nav-links a {
+      font-size: 16px;
+    }
+  }
+  

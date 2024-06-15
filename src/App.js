@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import CurrentWeather from './components/CurrentWeather';
+import WeeklyForecast from './components/WeeklyForecast';
+import WeatherDetails from './components/WeatherDetails';
+import About from './components/About';
+import Footer from './components/Footer';
+// my api key for weatehrmap d81056a82d54245788c28bf14fad2822
+
 
 function App() {
+  const [city,setCity] = useState('Jakarta');
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <Header setCity={setCity} /> 
+     <main>
+      <CurrentWeather city={city} />
+      <WeeklyForecast city={city} />
+      <WeatherDetails/>
+      <About/>
+     </main>
+      <Footer/>
     </div>
   );
 }
