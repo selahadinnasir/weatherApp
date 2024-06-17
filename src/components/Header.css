@@ -68,6 +68,7 @@
 @media (max-width: 768px) {
     .header {
       align-items: flex-start;
+      height: 90px;
     }
   
     .logo {
@@ -75,15 +76,21 @@
     }
   
     .search-bar input {
-      width: 100%;
+      width: 90%;
       margin-top: 10px;
     }
-  
-    .nav-links {
-      flex-direction: row;
-      gap: 10px;
-      
+
+    .search-button {
+      border-radius: 15px; /* Rounded corners */
+      padding: 8px 15px; /* Padding for size */
+      font-size: 10px; /* Font size */
+      font-weight: 300; /* Slightly bold text */
     }
+    
+    .nav-links {
+      flex-direction:column;
+      gap: 10px;
+      }
   
     .nav-links a {
       font-size: 16px;

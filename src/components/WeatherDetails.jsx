@@ -13,15 +13,15 @@ function WeatherDetails() {
 
   return (
     <section className="weather-details">
-      <div className="detail-item">
+      <div className="detail-item ">
         <span className="detail-title">Air Quality:</span>
         <span className="detail-value">{detailsData.airQuality}</span>
       </div>
-      <div className="detail-item">
+      <div className="detail-item ">
         <span className="detail-title">Humidity:</span>
         <span className="detail-value">{detailsData.humidity}%</span>
       </div>
-      <div className="detail-item">
+      <div className="detail-item ">
         <span className="detail-title">Sunrise:</span>
         <span className="detail-value">{detailsData.sunrise}</span>
       </div>
